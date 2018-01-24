@@ -11,10 +11,17 @@ class Coor
     var $name;
     var $addr;
     function Name(){
-        echo "sdadas";
+        echo "<h1>sdadas</h1>";
+    }
+    function GetName(){
+        echo $this->name;
+    }
+    function SetName($name){
+        $this->name = $name;
+        $this->GetName();
     }
 }
 
 $object = new Coor;
-$object->name="ALex";
-echo $object->name;
+$object->SetName("Nick");
+//$object->GetName();
