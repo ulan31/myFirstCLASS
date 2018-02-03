@@ -25,4 +25,3 @@ class Coor
 $object = new Coor;
 $object->SetName("Nick");
 //$object->GetName();
-echo "dsada";
