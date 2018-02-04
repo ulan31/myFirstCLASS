@@ -1,6 +1,13 @@
 <?php
 class Room{
-    public $color;
+    /**
+     * @var
+     */
+    private $color;
+
+    /**
+     * function
+     */
     public function getColor(){
         echo $this->color;
     }
