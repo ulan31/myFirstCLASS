@@ -1,27 +1,14 @@
 <?php
-/*
- * Created by PhpStorm.
- * User: aliekov.u
- * Date: 24.01.2018
- * Time: 14:32
- */
-
-class Coor
-{
-    var $name;
-    var $addr;
-    function Name(){
-        echo "<h1>sdadas</h1>";
+class Room{
+    public $color;
+    public function getColor(){
+        echo $this->color;
     }
-    function GetName(){
-        echo $this->name;
-    }
-    function SetName($name){
-        $this->name = $name;
-        $this->GetName();
+    public function setColor($color){
+        $this->color = $color;
     }
 }
 
-$object = new Coor;
-$object->SetName("Nick");
-//$object->GetName();
+$objRoom = new Room();
+$objRoom->setColor("green");
+$objRoom->getColor();
