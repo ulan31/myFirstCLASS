@@ -1,21 +1,23 @@
 <?php
 class Room{
-    /**
-     * @var
-     */
-    private $color;
 
-    /**
-     * function
-     */
-    public function getColor(){
-        echo $this->color;
+    static public $color = "dsadas";
+
+
+    static public function getColor(){
+        echo "fvfvfdfd";
     }
-    public function setColor($color){
-        $this->color = $color;
+    public function setColor(){
+          echo "sdasdasdsadas";
     }
 }
 
+echo Room::$color;
+echo '<br>';
+Room::getColor();
+echo '<br>';
 $objRoom = new Room();
-$objRoom->setColor("green");
-$objRoom->getColor();
+echo '<br>';
+echo $objRoom::$color;
+echo '<br>';
+$objRoom::getColor();
